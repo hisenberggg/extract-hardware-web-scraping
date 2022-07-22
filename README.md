@@ -33,7 +33,7 @@ Install dependencies
   pip install -r requirements.txt
 ```
 
-Run the scrits
+Run the script
 
 ```
   py scraping_json.py
