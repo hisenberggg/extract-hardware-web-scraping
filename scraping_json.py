@@ -62,14 +62,14 @@ if __name__=='__main__':
     usb_vendors, usb_devices =  get_vendor_device(url_usb)
     pci_vendors, pci_devices =  get_vendor_device(url_pci)
 
-    vendors = usb_vendors|pci_vendors
-    devices = usb_devices|pci_devices
-
-    with open("vendor_data.json", "w") as outfile:
-        json.dump(vendors, outfile)
-
-    with open("device_data.json", "w") as outfile:
-        json.dump(devices, outfile) 
+    with open("usb_vendor_data.json", "w") as outfile:
+        json.dump(usb_vendors, outfile)
+    with open("pci_vendor_data.json", "w") as outfile:
+        json.dump(pci_vendors, outfile)
+    with open("usb_device_data.json", "w") as outfile:
+        json.dump(usb_devices, outfile) 
+    with open("pci_device_data.json", "w") as outfile:
+        json.dump(pci_devices, outfile)
 
     
 
